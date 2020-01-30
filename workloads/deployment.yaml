@@ -4,6 +4,9 @@ metadata:
   name: app
   labels:
     app: app
+  annotations:
+    fluxcd.io/automated: "true"
+    #fluxcd.io/tag.podinfod: semver:~1.3
 spec:
   selector:
     matchLabels:
